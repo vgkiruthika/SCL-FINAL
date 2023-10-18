@@ -941,3 +941,24 @@ print(f"y({xn3}) = {y3}")
 print(f"y({xn4}) by Milne's predictor corrector method = {y4_milne}")
 print(f"y({xn4}) by Adam Bashforth method = {y4_adam}")
 
+#------------------------------------------------------------------
+#FORMULA
+
+
+#EULER yn = yn-1 + hf(x0 + n-1 h,yn-1)
+#MODIFIED EULER  y2 = y1 + (h/2)[f(x0 + h,y1)+f(x0 + 2h,y2)]
+#RUNGE KUTTA THIRD ORDER
+
+# k1 = hf(x0,y0)
+# k2 = hf(x0 + 1/2 h,y0 + 1/2k1)
+# k' = hf(x0+h,y0+k1)
+# k3 = hf(x0 + h,y0 + k')
+# k = 1/6(k1 + 4k2 + k3)
+
+#RUNGE KUTTA FOURTH ORDER
+
+# k1 = hf(x0,y0)
+# k2 = hf(x0 + 1/2 h,y0 + 1/2k1)
+# k3 = hf(x0 + 1/2h,y0+1/2k2)
+# k4 = hf(x0+h,y0+k3)
+# k = 1/6(k1+2k2+2k3+k4)
